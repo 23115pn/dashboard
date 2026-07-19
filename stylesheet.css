@@ -13,241 +13,92 @@ body {
 /* Nav Bar */
 
 nav{
-
-    width:100%;
-    height:85px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 80px;
-    background:linear-gradient(
-        90deg,
-        #f7cedc 0%,
-        #FFF9F2 50%,
-        #EEF7D3 100% );
-    border-bottom:2px solid #F2E6D8;
+    padding:15px 50px;
+    background-color: #F9C5D2;
     position:sticky;
     top:0;
     z-index:1000;
     box-shadow:0 5px 20px rgba(0,0,0,.06);
 }
 
-
 /* Logo */
 
 .logo{
-
     display:flex;
     align-items:center;
-    gap:12px;
-
+    gap: 12px;
 }
 
 .logo img{
-
-    width:42px;
-    height:42px;
-
+    width:50px;
+    height:50px;
     object-fit:cover;
-
     border-radius:50%;
-
 }
 
 .logo h2{
-
-    font-family:"Baloo 2",cursive;
-
-    color:#F53E73;
-
+    color:#ffffff;
     font-size:1.8rem;
-
 }
-
 
 /* Navigation */
 
-.nav-links{
-
+.nav-left{
     display:flex;
-    list-style:none;
-
-    gap:45px;
-
+    align-items: center;
+    gap:15px;
 }
 
-.nav-links a{
-
+.nav-left a{
     text-decoration:none;
-
     color:#557C2C;
-
     font-weight:600;
-
     transition:.3s;
-
     position:relative;
-
 }
-
 
 /* Underline animation */
 
-.nav-links a::after{
-
+.nav-left a::after{
     content:"";
-
     position:absolute;
-
     left:0;
     bottom:-8px;
-
     width:0%;
-
     height:3px;
-
     background:#F53E73;
-
     border-radius:10px;
-
     transition:.3s;
-
 }
 
-.nav-links a:hover{
-
+.nav-left a:hover{
     color:#F53E73;
-
 }
 
-.nav-links a:hover::after{
-
+.nav-left a:hover::after{
     width:100%;
-
 }
-
 
 /* Button */
 
 .nav-btn{
-
     text-decoration:none;
-
     background:#F53E73;
-
     color:white;
-
     padding:14px 28px;
-
     border-radius:50px;
-
     font-weight:600;
-
     transition:.3s;
-
 }
 
 .nav-btn:hover{
-
     transform:translateY(-3px);
-
     background:#E43167;
-
     box-shadow:0 12px 20px rgba(245,62,115,.35);
-
 }
-
-/* Navbar stuff 
-
-.logobtn {
-        text-align: right;
-        padding: 1px;
-        text-decoration: none;
-        height: 10px;
-        background-color: #587A10;
-}
-
-ul.topnav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #91BE5B;
-        z-index: 1000;
-    }
-
-/* text colour of navbar 
-ul.topnav li a {
-        display: block;
-        color: #91BE5B;
-        text-align: left;
-        padding: 14px 16px; 
-        text-decoration: none;
-    }
-
-/* with hover 
-li a:hover:not(.active) {
-        background-color: #FF7293;
-    }
-
-/* without hover
-.dropbtn {
-        background-color: #587A10;
-    }
-
-.dropdown:hover .dropdown-content {
-        display: block;
-        background-color: #587A10;
-    }
-
-/* makes sure that settings, lang, share stay on the right
-ul.topnav li.right {
-        float: right;
-    }
-
-/* makes sure that home stays on the left
-ul.topnav li {
-        float: left;
-    }
-
-/* styling for dropdown buttons - link, eng/maori, screen reader 
-li a, .dropbtn {
-        display: inline-block;
-        color: #91BE5B;
-        text-align: right;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-/* dropdown stuff 
-li.dropdown {
-        display: inline-block;
-        text-align: left;
-    }
-
-/* important but idk what it does, but without it the dropdown acts weird
-.dropdown-content {
-        display: none;
-        position: fixed;
-        background-color: #FF7293;
-        min-width: 150px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        text-align: right;
-    }
-
-.dropdown-content a {
-        color: #91BE5B;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    } 
-    
-*/
 
     /* Hero Section */
 .heroImg {
@@ -323,6 +174,12 @@ li.dropdown {
 footer {
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
+  background:linear-gradient(
+    
+    90deg,
+    #F9C5D2 0%,
+    #F17193 50%,
+    #F9C5D2 100%);
+
   color: white;
 }

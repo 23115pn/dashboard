@@ -102,7 +102,7 @@ nav{
 
     /* Hero Section */
 .heroImg {
-    background-color: #ff2457;
+    background-color: #F17193;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -114,7 +114,7 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(247, 10, 89);
+    color: rgb(255, 255, 255);
 }
 
 /* big title */
@@ -142,34 +142,275 @@ nav{
     padding: 10px 48px;
 }
 
+/* ===========================
+LOCATION
+=========================== */
 
+.location{
 
-/* Title Styling */
-.section-title {
-    font-size: 3rem;
-    color: rgb(255, 22, 100);
-    margin-bottom: 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:80px;
+
+    background:#C9DD77;
+
 }
 
-.all-browsers {
-  margin: 0;
-  padding: 5px;
-  background-color: lightgray;
+.location h2{
+
+    color:#648C3A;
+
+    font-size:3rem;
+
+    line-height:1;
+
+    margin-bottom:20px;
+
 }
 
-.all-browsers > h1, .browser {
-  margin: 10px;
-  padding: 5px;
+.address{
+
+    margin-bottom:40px;
+
+    font-weight:600;
+
+    color:#4E4E4E;
+
 }
 
-.browser {
-  background: white;
+.hours p{
+
+    margin-bottom:12px;
+
+    color:#4E4E4E;
+
 }
 
-.browser > h2, p {
-  margin: 4px;
-  font-size: 90%;
+.map-section{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:25px;
+
 }
+
+.map-placeholder{
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+
+    color:#888;
+
+}
+
+.map-btn{
+
+    border:none;
+
+    background:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+}
+
+.map-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/* ===========================
+LATEST NEWS
+=========================== */
+
+.news{
+
+    padding:90px 70px;
+
+    background:linear-gradient(#D9EB96,#F8C6D4);
+
+}
+
+.news h2{
+
+    text-align:center;
+
+    color:#648C3A;
+
+    font-size:3rem;
+
+    margin-bottom:70px;
+
+}
+
+.news-top{
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
+    gap:40px;
+
+    margin-bottom:70px;
+
+}
+
+.mascot-placeholder{
+
+    width:180px;
+    height:220px;
+
+    background:white;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.drink-card{
+
+    text-align:center;
+
+}
+
+.drink-image{
+
+    width:180px;
+    height:220px;
+
+    background:white;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+}
+
+.drink-card h3{
+
+    color:#648C3A;
+
+}
+
+.instagram{
+
+    display:flex;
+    justify-content:center;
+
+    gap:35px;
+
+}
+
+.insta-post{
+
+    width:250px;
+    height:340px;
+
+    background:white;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+    background:#6E9C42;
+
+    color:white;
+
+    padding:40px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.socials{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.socials a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.socials a:hover{
+
+    opacity:.7;
+
+}
+
+.footer-info{
+
+    text-align:right;
+
+}
+
+.footer-info p{
+
+    margin-bottom:8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   text-align: center;

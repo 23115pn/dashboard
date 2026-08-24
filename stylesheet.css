@@ -1,5 +1,5 @@
 body {
-    background-color: #91BE5B;
+    background-color: white;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
@@ -102,11 +102,10 @@ nav{
 
     /* Hero Section */
 .heroImg {
-    background-color: #F17193;
+    background-image: url("img/home.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: right center;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -123,7 +122,7 @@ nav{
     margin: 0;
     /* Add the blur effect */
     background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.6); /* Black w/opacity/see-through */
+    background-color: rgba(68, 93, 33, 0.785); /* Black w/opacity/see-through */
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     padding: 5px 40px;
@@ -136,7 +135,7 @@ nav{
     margin-top: 1rem; /*gap between both boxes*/
     /* Add the blur effect */
     background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.578); /* Black w/opacity/see-through */
+    background-color: rgba(225, 77, 104, 0.701); /* Black w/opacity/see-through */
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     padding: 10px 48px;
@@ -237,14 +236,16 @@ padding: 10px 0;
     transform:translateY(-9px);
 }
 
-
-
+.divider-image {
+    width:100%;
+    height:100px;
+    background-color:#C9DD77;
+    margin-bottom: 0px;
+}
 
 /* Latest News*/
-
 .news{
-    padding:90px 70px;
-    background:linear-gradient(#D9EB96,#F8C6D4);
+    background-color:#C9DD77;
 }
 
 .news h2{
@@ -263,26 +264,27 @@ padding: 10px 0;
 }
 
 .mascot-placeholder{
-    width:180px;
-    height:220px;
-    background:white;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:left;
+    width:40%;
+
 }
 
 .drink-card{
     text-align:left;
-}
+} 
 
-.drink-image{
-    width:180px;
+.mango-image{
+    width:100%;
     height:220px;
-    background:white;
     border-radius:30px;
     margin-bottom:20px;
-}
+} 
+
+.blueberry-image{
+    width:88%;
+    height:220px;
+    border-radius:30px;
+    margin-bottom:20px;
+} 
 
 .drink-card h3{
     color:#648C3A;
@@ -363,6 +365,7 @@ footer {
 
 .about{
     display:flex;
+    
     justify-content:space-between;
     align-items:center;
     padding-left:200px;
@@ -397,9 +400,12 @@ footer {
 }
 
 .about-image{
-    width:500px;
-    height:500px;
+    width:100%;
+    height:100%;
     background:white;
+    background-image: url("img/room.png");
+    background-size: cover;
+    background-position: center;
     display:flex;
     justify-content:center;
     align-items:center;

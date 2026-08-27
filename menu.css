@@ -64,6 +64,7 @@ nav{
 /* Underline animation */
 
 .nav-left a::after{
+
     position:absolute;
     left:0;
     bottom:-8px;
@@ -165,11 +166,13 @@ nav{
     }
 
     .tab-active {
-      background: #ef013d;
+      background: #F9C5D2;
     }
   
-    .tab-active {
-      background: #ff7e9e;
+    .tab-active-dessert {
+      color: #6F9248;
+      background: #c2da88;
+      border: 3px solid #6F9248;
     }
  
 

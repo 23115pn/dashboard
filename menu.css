@@ -288,3 +288,51 @@ nav{
     color: white;
 }
 
+/* Product card */
+
+.merch-card {
+   background-color: #e6edd5;
+    border-radius: 15px;
+    border: 3px solid #6F9248;
+    min-height: 155px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Product image */
+
+.merch-card img {
+    width: 220px;
+    height: 250px;
+    object-fit: scale-down; 
+    flex-shrink: 0; 
+}
+
+
+/* Product information */
+
+.merch-info {
+    flex: 1;
+}
+
+.merch-info h2 {
+     margin: 10px 0 20px;
+    font-size: 40px;
+    color: #6F9248;
+}
+
+/* Price */
+
+.price-merch {
+     display: inline-block;
+    background-color: #8FB151;
+    border-radius: 8px;
+    border: 1px solid #6F9248;
+    padding: 5px 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+

@@ -220,6 +220,11 @@ padding: 10px 0;
     align-items:center;
     font-size:3rem;
     color:#888;
+    background-image: url("img/room.png");
+    background-size: shrink down;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .map-btn{
@@ -306,60 +311,74 @@ padding: 10px 0;
     align-items:center;
 }
 
-
+.collage{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:600px;
+    height:auto;
+    background-size: shrink down;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* Footer */
 
-footer{
+/* footer{
     background:#6E9C42;
     color:white;
     padding:40px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-}
+} 
 
-.socials{
-    display:flex;
-    gap:25px;
-}
-
-.socials a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.socials a:hover{
-    opacity:.7;
-}
 
 .footer-info{
     text-align:right;
+}*/
+
+.footer {
+    width:100%;
+    object-fit:shrink down;
 }
 
-.footer-info p{
-    margin-bottom:8px;
+/* Hero Section */
+.footer {
+    background-image: url("img/footer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background:linear-gradient(
-    
-    90deg,
-    #F9C5D2 0%,
-    #F17193 50%,
-    #F9C5D2 100%);
-
-  color: white;
+/* big title */
+.heroImgh1 {
+    font-size: 2.5rem;
+    margin: 0;
+    /* Add the blur effect */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(68, 93, 33, 0.785); /* Black w/opacity/see-through */
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    padding: 5px 40px;
 }
 
-.about-section {
-  padding: 50px;
-  background-color: #F9C5D2;
-  color: #4E4E4E;
-}
+
+
+
+
+
+
+
 
 /* about section */
 

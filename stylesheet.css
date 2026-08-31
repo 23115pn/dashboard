@@ -4,257 +4,427 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Nav Bar */
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 50px;
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sniglet-regular {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sniglet-extrabold {
+  font-family: "Sniglet", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.comic-neue-light {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-neue-bold {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comic-neue-light-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.comic-neue-regular-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.comic-neue-bold-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+/* NAV BAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
     background-color: #F9C5D2;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
 }
+
 
 /* Logo */
 
-.logo{
-    display:flex;
-    align-items:center;
+.logo {
+    display: flex;
+    align-items: center;
     gap: 12px;
 }
 
-.logo img{
-    width:50px;
-    height:50px;
-    object-fit:cover;
-    border-radius:50%;
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.logo h2{
-    color:#ffffff;
-    font-size:1.8rem;
+.logo h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
 }
+
 
 /* Navigation */
 
-.nav-left{
-    display:flex;
+.nav-left {
+    display: flex;
     align-items: center;
-    gap:15px;
+    gap: 15px;
 }
 
-.nav-left a{
-    text-decoration:none;
-    color:#EF4971;
-    font-weight:600;
-    transition:.3s;
-    position:relative;
+.nav-left a {
+    text-decoration: none;
+    color: #EF4971;
+    transition: .3s;
+    position: relative;
+    font-family: "chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    display: inline-block;
+    transform: scaleX(1.15);
+    padding-left: 20px;
 }
+
 
 /* Underline animation */
 
-.nav-left a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-8px;
-    width:0%;
-    height:3px;
-    background:#6F9248;
-    border-radius:10px;
-    transition:.3s;
+.nav-left a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 3px;
+    background: #6F9248;
+    border-radius: 10px;
+    transition: .3s;
 }
 
-.nav-left a:hover{
-    color:#6F9248;
+.nav-left a:hover {
+    color: #6F9248;
 }
 
-.nav-left a:hover::after{
-    width:100%;
+.nav-left a:hover::after {
+    width: 100%;
 }
 
-/* Button */
 
-.nav-btn{
-    text-decoration:none;
-    background:#F53E73;
-    color:white;
-    padding:14px 28px;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
+/* Navigation buttons */
+
+.nav-btn {
+    text-decoration: none;
+    background: #F53E73;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: .3s;
+    font-family: "Comic Neue";
+    font-size: 1.4rem;
 }
 
-.nav-btn:hover{
-    transform:translateY(-3px);
-    background:#E43167;
-    box-shadow:0 12px 20px rgba(245,62,115,.35);
+.nav-btn:hover {
+    transform: translateY(-3px);
+    background: #E43167;
+    box-shadow: 0 12px 20px rgba(245,62,115,.35);
 }
 
-    /* Hero Section */
+
+/* HERO SECTION */
+
 .heroImg {
     background-image: url("img/home.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
-    color: rgb(255, 255, 255);
+    box-sizing: border-box;
 }
 
-/* big title */
+.herotextcontainer {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+/* Big title */
+
 .heroImgh1 {
-    font-size: 2.5rem;
+    font-size: 4.8rem;
     margin: 0;
-    /* Add the blur effect */
-    background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(68, 93, 33, 0.785); /* Black w/opacity/see-through */
+    background-color: rgba(241, 113, 147, 0.301);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
-    padding: 5px 40px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    color: #EF4971;
+    font-family: "Lilita One";
+    text-align: left;
+    box-sizing: border-box;
 }
 
-/* sub heading */
+.heroImgh1 h1 {
+    margin: 0;
+    text-shadow: 10px 10px 0px #ff9eb89d;
+}
+
+/* Sub heading */
+
 .heroImgp {
-    font-size: 1.21rem;
-    max-width: 800px;
-    margin-top: 1rem; /*gap between both boxes*/
-    /* Add the blur effect */
-    background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(225, 77, 104, 0.701); /* Black w/opacity/see-through */
+    font-size: 2rem;
+    max-width: 700px;
+    margin-top: 45px;
+    background-color: rgba(241, 113, 147, 0.301);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     padding: 10px 48px;
+    color: #EF4971;
+    border-radius: 20px;
+    font-family: "Comic Neue";
+    font-weight: 700;
+    text-align: left;
+    box-sizing: border-box;
 }
 
-/* Acts as the window viewport */
+/* TICKER */
+
 .ticker-container {
-  width: 100%;
-  overflow: hidden;          /* Hides text outside the box */
-  white-space: nowrap;      /* Keeps text on a single line */
-  background-color: #EF4971;
-padding: 10px 0; 
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #EF4971;
+    padding: 10px 0;
 }
 
-/* The element that actually moves */
 .ticker-text {
-  color: #ffd4de;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 2rem;
-  display: inline-block;
-  padding-left: 100%;       /* Starts the text completely off-screen to the right */
-  animation: marquee 15s linear infinite;
+    color: #ffd4de;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
 }
 
-/* Controls the speed and behavior (Equivalent to scrollamount) */
 @keyframes marquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0); /* Moves text fully off-screen to the left */
-  }
+
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+
 }
 
-/* Location and Hours */
+
+/* ABOUT SECTION */
+
+.about-background {
+    background-color: #F9C5D2;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 1800px;
+    margin: auto;
+}
+
+.about h2 {
+    color: #EF4971;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 90px;
+    font-weight: bold;
+    font-family: "Lilita One";
+}
+
+.about p {
+    color: #F17193;
+    font-size: 2.3rem;
+    max-width: 650px;
+    font-family: "Comic Neue";
+    font-weight: 700;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* LOCATION AND HOURS */
 
 .location {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 100px 13%;
+    padding: 150px 13%;
     background: #C9DD77;
 }
 
-.location h2{
-    color:#648C3A;
-    font-size:4.5rem;
-    line-height:1;
-    margin-bottom:20px;
+.location h2 {
+    color: #648C3A;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-family: "Lilita One";
 }
 
-.address{
-    margin-bottom:40px;
-    color:#648C3A;
-    font-size:1.5rem;
-    font-weight: 600;
+.address {
+    margin-bottom: 40px;
+    color: #648C3A;
+    font-size: 2.3rem;
+    font-family: "Comic Neue";
+    font-weight: 700;
 }
 
-.hours p{
-    margin-bottom:12px;
-    color:#648C3A;
-    font-size:1.5rem;
-    font-weight: 600;
+.hours p {
+    margin-bottom: 12px;
+    color: #648C3A;
+    font-size: 2.3rem;
+    font-family: "Comic Neue";
+    font-weight: 700;
 }
 
-.map-section{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:25px;
+.map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
-.map-placeholder{
-    width:500px;
-    height:500px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:3rem;
-    color:#888;
+.map-placeholder {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #888;
     background-image: url("img/room.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.map-btn{
-    border:none;
-    background:white;
-    padding:15px 35px;
-    border-radius:40px;
-    cursor:pointer;
-    font-size:1.5rem;
-    transition:.3s;
+.map-btn {
+    border: none;
+    background: white;
+    padding: 15px 35px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: .3s;
 }
 
-.map-btn:hover{
-    transform:translateY(-9px);
+.map-btn:hover {
+    transform: translateY(-9px);
 }
+
+
+/* DIVIDER */
 
 .divider-image {
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
 }
 
-/* Latest News*/
-.news{
-    background-color:#F9C5D2;
+
+/* LATEST NEWS */
+
+.news {
+    background-color: #F9C5D2;
 }
 
-.news h1{
-    text-align:center;
-    color:#EF4971;
-    font-size:4.5rem;
-    margin-bottom:70px;
-    padding-top:100px;
+.news h1 {
+    text-align: center;
+    color: #EF4971;
+    font-size: 5rem;
+    margin-bottom: 70px;
+    padding-top: 100px;
+    font-family: "Lilita One";
 }
 
 .news-top {
@@ -280,51 +450,57 @@ padding: 10px 0;
     object-fit: contain;
 }
 
-.drink-card{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:left;
+.drink-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
     background-color: #fff0f455;
     border-radius: 30px;
     padding: 2%;
-    justify-content:center;
     align-items: center;
-} 
+}
 
-.drink-card img{
-    width:180px;
-    height:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-} 
+.drink-card img {
+    width: 180px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .drink-card h3 {
     color: #ffffff;
-    font-size: 1.8rem;
-    justify-content:center;
-    align-items:center;
-    font-weight: 900;
+    font-size: 2.3rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: "Comic Neue";
 }
 
+
+/* COLLAGE  */
+
 .collage-img {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:1800px;
-    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1800px;
+    max-width: 100%;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+
+/* FOOTER */
+
 .footer {
-    width:100%;
-    object-fit:shrink down;
+    width: 100%;
+    object-fit: shrink down;
 }
 
-/* Footer Section */
 .footer {
     background-image: url("img/footer.png");
     background-size: 100%;
@@ -341,52 +517,451 @@ padding: 10px 0;
     background-color: pink;
 }
 
-/* about section */
 
-.about-background {
-    background-color: #F9C5D2;
-    padding: 80px;
-    justify-content: center;
-    align-items: center;
+/* RESPONSIVE DESIGN TABLET */
+
+@media screen and (max-width: 900px) {
+
+
+    /* Navigation */
+
+    nav {
+        padding: 15px 30px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+
+    .nav-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .nav-btn {
+        padding: 12px 20px;
+    }
+
+
+    .heroImg {
+        background-size: 60%;
+        background-position: right center;
+    }
+
+    .herotextcontainer {
+        width: 55%;
+        margin-left: 4%;
+    }
+
+    .heroImgh1 {
+        font-size: 3.5rem;
+        padding: 35px 30px;
+    }
+
+    .heroImgh1 h1 {
+        text-shadow: 7px 7px 0px #ff9eb8;
+    }
+
+    .heroImgp {
+        font-size: 1.4rem;
+        padding: 10px 30px;
+        margin-top: 30px;
+    }
+
+
+    /* Ticker */
+
+    .ticker-text {
+        font-size: 1.5rem;
+    }
+
+
+    /* About */
+
+    .about-background {
+        padding: 50px;
+    }
+
+    .about {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .about h2 {
+        font-size: 3.5rem;
+        margin-bottom: 40px;
+    }
+
+    .about p {
+        font-size: 1.3rem;
+    }
+
+    .about-image img {
+        max-width: 400px;
+    }
+
+
+    /* Location */
+
+    .location {
+        padding: 70px 8%;
+    }
+
+    .location h2 {
+        font-size: 3.5rem;
+    }
+
+    .address,
+    .hours p {
+        font-size: 1.2rem;
+    }
+
+    .map-placeholder {
+        width: 380px;
+        height: 380px;
+    }
+
+
+    /* News */
+
+    .news h1 {
+        font-size: 3.5rem;
+        margin-bottom: 50px;
+    }
+
+    .news-top {
+        max-width: 90%;
+    }
+
+    .drink-card img {
+        width: 150px;
+    }
+
+    .drink-card h3 {
+        font-size: 1.5rem;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        height: 35vh;
+        background-size: cover;
+    }
+
 }
 
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 8%;
-    padding-right: 8%;
-    background-color: #ffffff;
-    border-radius: 20px;
-    max-width: 1800px;
+
+/* RESPONSIVE DESIGN MOBILE */
+
+@media screen and (max-width: 600px) {
+
+
+    /* NAVIGATION */
+
+    nav {
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-left {
+        gap: 8px;
+    }
+
+    .nav-left h2 {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 6px;
+    }
+
+    .nav-btn {
+        padding: 9px 14px;
+        font-size: 0.85rem;
+    }
+
+
+    .heroImg {
+        min-height: 100vh;
+        background-size: 100%;
+        background-position: center bottom;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .herotextcontainer {
+        width: 90%;
+        margin-left: 5%;
+        align-items: center;
+    }
+
+    .heroImgh1 {
+        width: 100%;
+        font-size: 2.8rem;
+        padding: 25px 20px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .heroImgh1 h1 {
+        text-shadow: 5px 5px 0px #ff9eb8;
+    }
+
+    .heroImgp {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* TICKER */
+
+    .ticker-container {
+        padding: 7px 0;
+    }
+
+    .ticker-text {
+        font-size: 1.1rem;
+    }
+
+
+    /* ABOUT */
+
+    .about-background {
+        padding: 30px 15px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+    }
+
+    .about p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* LOCATION */
+
+    .location {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .location h2 {
+        font-size: 3rem;
+    }
+
+    .address {
+        font-size: 1.1rem;
+        margin-bottom: 35px;
+    }
+
+    .hours p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .map-section {
+        width: 100%;
+    }
+
+    .map-placeholder {
+        width: min(350px, 85vw);
+        height: min(350px, 85vw);
+    }
+
+    .map-btn {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+
+
+    /* DIVIDER */
+
+    .divider-image {
+        height: 60px;
+        object-fit: cover;
+    }
+
+
+    /* LATEST NEWS */
+
+    .news h1 {
+        font-size: 2.8rem;
+        padding-top: 60px;
+        margin-bottom: 35px;
+    }
+
+    .news-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 90%;
+        margin: 30px auto 40px;
+    }
+
+    .mascot-placeholder {
+        width: 60%;
+    }
+
+    .mascot-placeholder img {
+        max-width: 250px;
+    }
+
+    .drink-card {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .drink-card img {
+        width: 150px;
+    }
+
+    .drink-card h3 {
+        font-size: 1.3rem;
+    }
+
+
+    /* COLLAGE */
+
+    .collage-img {
+        width: 100%;
+        height: 120px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        height: 30vh;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
-.about h2{
-    color:#ff325e;
-    font-size:4.5rem;
-    line-height:1;
-    margin-bottom:90px;
-    font-weight: bold;
-}
 
-.about p {
-    color: #ff325e;
-    font-size: 1.7rem;
-    line-height: 1.6;
-    max-width: 650px;
-}
+/* VERY SMALL PHONES */
 
-.about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+@media screen and (max-width: 400px) {
 
-.about-image img {
-    width: 100%;
-    max-width: 500px;
-    object-fit: cover;
-    border-radius: 20px;
+
+    /* Navigation */
+
+    nav {
+        padding: 8px 10px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-left h2 {
+        font-size: 0.95rem;
+    }
+
+    .nav-btn {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+
+    .heroImg {
+        background-size: 110%;
+    }
+
+    .heroImgh1 {
+        font-size: 2.3rem;
+        padding: 20px 15px;
+    }
+
+    .heroImgp {
+        font-size: 1rem;
+    }
+
+
+    /* About */
+
+    .about-background {
+        padding: 20px 10px;
+    }
+
+    .about {
+        padding: 25px 15px;
+    }
+
+    .about h2 {
+        font-size: 2.3rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+
+    /* Location */
+
+    .location {
+        padding: 50px 15px;
+    }
+
+    .location h2 {
+        font-size: 2.5rem;
+    }
+
+    .address,
+    .hours p {
+        font-size: 0.9rem;
+    }
+
+    .map-placeholder {
+        width: 80vw;
+        height: 80vw;
+    }
+
+
+    /* News */
+
+    .news h1 {
+        font-size: 2.3rem;
+    }
+
+    .mascot-placeholder {
+        width: 70%;
+    }
+
+    .drink-card {
+        width: 90%;
+    }
+
 }
 
 

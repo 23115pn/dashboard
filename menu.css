@@ -105,7 +105,6 @@ nav{
       margin: 0;
       width: 100%;
       min-height: 100%;
-      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
       background-color: white;
       color: var(--text);
     }
@@ -136,10 +135,11 @@ nav{
     .title {
       margin: 0;
       font-size: clamp(2.5rem, 4vw, 4rem);
-      font-weight: 900;
-      letter-spacing: -0.08em;
+      font-weight: 100;
       line-height: 0.9;
       color:#EF4971;
+      font-family: "Lilita One";
+      font-size: 5rem;
     }
 
     .tabs {
@@ -336,3 +336,153 @@ nav{
     color: white;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 55px;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+
+    /* Navigation */
+
+    nav {
+        padding: 15px 30px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+
+    .nav-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .nav-btn {
+        padding: 12px 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 600px) {
+  
+  nav {
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-left {
+        gap: 8px;
+    }
+
+    .nav-left h2 {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 6px;
+    }
+
+    .nav-btn {
+        padding: 9px 14px;
+        font-size: 0.85rem;
+    }
+  
+  nav {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-left {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tab-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-card,
+    .product-card-dessert,
+    .merch-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-card img,
+    .product-card-dessert img {
+        width: 120px;
+        height: 180px;
+    }
+
+    .merch-card img {
+        width: 180px;
+        height: 200px;
+    }
+
+    .product-info h2,
+    .product-dessert-info h2,
+    .merch-info h2 {
+        font-size: 30px;
+    }
+
+    .product-info p,
+    .product-dessert-info p {
+        margin-bottom: 20px;
+    }
+
+    .price,
+    .price-dessert,
+    .price-merch {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+nav {
+        padding: 8px 10px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-left h2 {
+        font-size: 0.95rem;
+    }
+
+    .nav-btn {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+  }
